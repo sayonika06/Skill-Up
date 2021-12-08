@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>SkillUp</title>
+    <style>
+        /* for the cover image */
+        
+        body{
+            
+            background: url('cover3.jpg');
+            
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 1200px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .left{
+            /* border: 2px solid black; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 5px;
+            
+        }
+        .left img{
+            width: 150px;
+            height: 150px;
+        }
+        .centre{
+            /* border: 2px solid black; */
+            display: block;
+            
+            width:51%;
+            margin:20px auto;
+            background-color: rgb(31, 30, 30);
+            border-radius: 25px;
+
+        }
+        .right{
+            /* border: 2px solid black; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+        .navbar{
+            display: inline-block;
+            
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: auto;
+            
+           
+        }
+        .navbar li{
+            display: inline-block;
+            position: sticky;
+           
+        }
+        .navbar li a{
+            color: rgb(247, 236, 236);
+            text-decoration: none;
+            padding: 17px 56px;
+            border-radius: 25px;
+
+        }
+        .navbar li a:hover{
+            background-color: rgb(218, 218, 218);
+            color: black;
+        }
+        .btn{
+            
+            margin: 10px;
+            border-radius: 30px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: cursive;
+
+        }
+        #call{
+            background-color: rgb(29, 56, 29);
+            border: rgb(57, 148, 57);
+            font-family: 'Noto Serif', serif;
+            padding: 12px 30px;
+            cursor: pointer;
+            
+        }
+
+        #email{
+            background-color: rgb(85, 5, 21);
+            border:rgb(207, 16, 54) ;
+            font-family: 'Noto Serif', serif;
+            padding: 12px 30px;
+            cursor: pointer;
+        }
+        .container{
+            background-color: rgb(126, 108, 70);
+            border-radius: 30px;
+            /* border: 2px solid rgb(68, 0, 255); */
+           
+            margin: 200px 1115px;
+            padding: 14px 15px;
+            width: 23%;
+            cursor: pointer;
+
+        }
+        .entryform input{
+            
+            text-align: center;
+            display: block;
+            width: 70%;
+            padding: 8px;
+            margin : 20px auto;
+            border-radius: 20px;
+            border-color: rgb(146, 144, 144);
+            font-size: 20px;
+            font-family: 'Noto Serif', serif;
+
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- for logo in the left -->
+        <div class="left">
+            <img src="logoskillup1.png">
+            <div style="font-family: cursive;">Upgrade your skills with </div>
+            <div style="font-size: 30px; margin-left: 13px; font-family:cursive"><strong style="
+                padding-left: 20px;
+            ">SkillUp</strong></div>
+        </div>
+        <!-- for navigation bar in centre -->
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Our Courses</a></li>
+                <li><a href="#">Teach on SkillUp</a></li>
+                <li><a href="#" style="padding-right: 67px;">Get Started</a></li>
+            </ul>
+        </div>
+        <!-- <for contact button on right -->
+        <div class="right">
+            <button id="call" class="btn" style="padding-right: 42px; padding-left: 39px;">Call Us</button>
+            <br>
+            <button id="email" class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 style="text-align: center;font-family:'Noto Serif', serif ; font-size: 26px;">Get started with our best courses now</h1>
+        <form action="noaction.php">
+            <div class="entryform">
+                <h1 style="text-align: center; color: rgb(248, 248, 248);" >Register Now!</h1>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="entryform">
+                
+                <input type="email" name="bday" placeholder="Enter your email" >
+            </div>
+            <div class="entryform">
+            
+                <input type="password" name="bday" placeholder="Enter your password" >
+            </div>
+            <button style="margin-left: 132px; padding: 10px 25px; border:0px; border-radius: 30px; background-color: rgb(85, 5, 21); color: rgb(243, 240, 240);">Submit</button>
+        </form>
+    </div>
+
+    <div class="greenbg">
+        <img 
+        style="width: 240vh;
+        height: 50vh;"
+         src="blackbg.jpg">
+
+    </div>
+    
+</body>
+</html>
